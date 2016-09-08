@@ -1,0 +1,69 @@
+<h2>Consulta de encuestas</h2>
+<form class="form-inline" style="margin: 20px 0px 28px 0px">
+    <div class="form-group">
+        <label for="select_local">Local</label>
+        <select id="select_local" class="form-control input-sm">
+            <% localCollection.each(function (local) { %>
+            <option value="<%=local.id%>" <% if (request.idLocal == local.id) { %>selected="true"<% } %>><%=local.get('noLocal')%></option>
+            <% }); %>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="select_encuesta_plantilla">Encuesta</label>
+        <select id="select_encuesta_plantilla" class="form-control input-sm">
+            <% _.each(encuestaOptions, function (v) { %>
+            <option value="<%=v.idPlantillaEncuesta%>"><%=v.deEncuestaCorto%></option>
+            <% }) %>
+        </select>
+    </div>
+    <div class="form-group">
+    	<label for="select_tipo_pregunta">Pregunta</label>
+    	<select id="select_tipo_pregunta" class="form-control input-sm">
+    		<option value="" <% if (request.coTipoPregunta == '') { %>selected<% } %>>TODOS</option>
+    		<option value="ABIE" <% if (request.coTipoPregunta == 'ABIE') { %>selected<% } %>>Abierta</option>
+    		<option value="CERR" <% if (request.coTipoPregunta == 'CERR') { %>selected<% } %>>Corta</option>
+    	</select>
+    </div>
+    <div class="form-group">
+    	<label for="fe-desde">Desde</label>
+    	<input id="fe-desde" type="text" class="datepicker form-control input-sm" value="<%=request.desde%>" />
+    </div>
+    <div class="form-group">
+    	<label for="fe-hasta">Hasta</label>
+    	<input id="fe-hasta" type="text" class="datepicker form-control input-sm" value="<%=request.hasta%>" />
+    </div>
+    <button type="button" class="btn btn-sm btn-primary" id="btn-consultar-encuestas"><span class="glyphicon glyphicon-search"></span> Buscar</button>
+    <a id="btn-export-excel" class="btn btn-default" href="#"><span class="glyphicon glyphicon-export"></span> Exportar excel</a>
+</form>
+<div class="text-center">
+	<h4>Encuestas realizadas desde <%=request.desde%> hasta <%=request.hasta%> con pregunta <%=request.coTipoPregunta == 'ABIE' ? 'ABIERTA' : (request.coTipoPregunta == 'CERR' ? 'CORTA' : 'TODAS')%></h4>
+</div>
+<!-- <div class="table-responsive"> -->
+<table class="table table-bordered table-striped table-hover table-condensed" style="margin-top: 20px;">
+    <thead>
+    	<th>Local</th>
+        <th>Encuesta</th>
+        <th>Fecha</th>
+        <th>Nro.</th>
+        <th>Pregunta</th>
+        <th>Rpta. Corta</th>
+        <th>Rpta. Larga</th>
+        <th>Cliente</th>
+        <th>Tipo Doc.</th>
+        <th>Edad</th>
+        <th>Sexo</th>
+        <th>Nro. Mesa</th>
+        <th>Cod. Mozo</th>
+        <th>Mozo</th>
+        <th>Envía publicidad</th>
+        <th>Email</th>
+        <th>Teléfono Celular</th>
+        <th>Teléfono Fijo</th>
+        <th>Creada por</th>
+    </thead>
+    <tbody></tbody>
+</table>
+<div class="text-center">
+<i>Total de registros: <%=totalRegistros%></i>
+</div>
+<!-- </div> -->

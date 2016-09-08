@@ -1,0 +1,27 @@
+.show-when-editing {
+	display: none;
+}
+
+.hidden-when-editing {
+	display: block;
+}
+
+.edit .show-when-editing {
+	display: block;
+}
+
+.edit .hidden-when-editing {
+	display: none;
+}
+
+.background-par-lista {
+	background: #e6e6e6;
+}
+
+.hidden-when-new {
+	display: block;
+}
+
+.new .hidden-when-new {
+	display: none;
+}

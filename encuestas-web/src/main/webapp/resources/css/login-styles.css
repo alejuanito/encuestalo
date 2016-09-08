@@ -1,0 +1,161 @@
+@CHARSET "ISO-8859-1";
+
+@font-face {
+    font-family: AACHENN;
+    src: url(../fonts/AACHENN.TTF)
+}
+
+@font-face {
+    font-family: AACHENN;
+    src: url(../fonts/AACHENN.OTF);
+}
+
+@font-face {
+    font-family:ARBONNI0;
+    src: url(../fonts/ARBONNI0.TTF);
+}
+@font-face {
+    font-family:ARBONNI0;
+    src: url(../fonts/ARBONNI0.OTF);
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+* {
+	font-family: AACHENN;
+}
+
+#header {
+	height: 60px;
+	background-image: url("../img/mostacho.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+	#header {
+		height: 82px;
+	}
+}
+
+#background {
+    background-image:url(../img/texura.jpg);
+}
+
+.btn-encuesta-piombino {
+	background: transparent url(../img/encuestaOpen.png) no-repeat !important;
+	overflow: hidden;
+    border: transparent !important;
+    color: transparent !important;
+    width: 85px;
+    height: 105px;
+    margin-left: 10px;
+}
+
+.btn-admin-piombino {
+	background: transparent url(../img/sistemaOpen.png) no-repeat !important;
+	overflow: hidden;
+    border: transparent !important;
+    color: transparent !important;
+    width: 85px;
+    height: 105px;
+}
+
+.btn-continuar-piombino {
+	background: transparent url(../img/continuar.png) no-repeat -16px -13px !important;
+	overflow: hidden;
+    border: transparent !important;
+    color: transparent !important;
+    width: 180px;
+    height: 51px;
+}
+
+.main-container-piombino {
+/* 	position: relative; */
+/* 	top: -80px; */
+/* 	margin-top: 159px; */
+    margin-left: 15px;
+    margin-right: 15px;
+    border-image: url(../img/border.png);
+    border-image-slice:30;
+    border-image-repeat: round;
+    border-color:#5f423a;
+    border-width:32px;
+}
+
+.inner-container-piombino {
+    background: transparent url(../img/texura.jpg) !important;
+    padding: 10px;
+}
+
+.btn-continuar-piombino :hover {
+    background: transparent url(../img/continuar.png) no-repeat !important;
+    border: transparent !important;
+    color: transparent !important;
+}
+
+.user-data-container {
+    position: absolute;
+/*     bottom: 72px; */
+/* 	top: 87px; */
+    right: 10px;
+    color: white;
+}
+
+.user-data-container a {
+	color: white;
+}
+
+@media only screen and (max-width: 750px) {
+	.main-container-piombin {
+	    margin-left: 0px;
+	    margin-right: 0px;
+	}
+}
+/* @media only screen and (max-width: 970px) { */
+/* @media only screen and (max-width: 1020px) { */
+/* 	#header { */
+/* 	   top: -20px; */
+/* 	   top: -60px; */
+/* 	} */
+
+/* 	.main-container-piombino { */
+/* 		top: -10px; */
+/* 		top: -50px; */
+/* 		margin-top: 99px; */
+/* 	    margin-left: auto; */
+/* 	    margin-right: auto; */
+/* 	} */
+
+/* 	.user-data-container { */
+/* 	    bottom: 0px; */
+/* 	    top: 68px; */
+/* 	} */
+/* } */
+
+
+#anterior {
+	position: absolute;
+	bottom: -89px;
+	left: -100px;
+}
+
+#siguiente, .siguiente {
+    position: absolute;
+    bottom: -91px;
+    right: -104px;
+}
+
+#cancelar {
+	position: absolute;
+	top: -65px;
+	left: -67px;
+}
+input {
+    text-transform:uppercase;
+}

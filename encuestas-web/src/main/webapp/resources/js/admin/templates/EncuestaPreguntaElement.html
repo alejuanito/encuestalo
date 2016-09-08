@@ -1,0 +1,58 @@
+<div class="col-sm-12">
+	<div class="row" style="margin-top: 10px;">
+		<div class="col-sm-2 text-right"><label>Pregunta</label></div>
+		<div class="col-sm-10">
+			<input class="show-when-editing form-control input-sm dePregunta" type="text" value="<%=dePregunta%>" />
+			<span class="hidden-when-editing"><%=dePregunta%></span>
+		</div>
+	</div>
+	<div class="row" style="margin-top: 5px;">
+		<div class="col-sm-2 text-right"><label>Orden</label></div>
+		<div class="col-sm-4">
+			<input class="show-when-editing form-control input-sm nuOrden" type="text" value="<%=nuOrden%>" />
+			<span class="hidden-when-editing"><%=nuOrden%></span>
+		</div>
+	</div>
+	<div class="row" style="margin-top: 5px;">
+		<div class="col-sm-2 text-right"><label>Respuesta corta</label></div>
+		<div class="col-sm-10">
+			<input class="show-when-editing inEsRptaCorta" type="checkbox" <% if (inEsRptaCorta) { %>checked="checked"<% } %> />
+			<span class="hidden-when-editing"><%=inEsRptaCorta ? 'Si' : 'No'%></span>
+		</div>
+	</div>
+	<div class="row" style="margin-top: 5px;">
+		<div class="col-sm-2 text-right"><label>Estado</label></div>
+		<div class="col-sm-10">
+			<span class="hidden-when-editing"><%=estado == 'A' ? 'ACTIVO' : 'INACTIVO'%></span>
+			<label class="show-when-editing"><input class="estado" type="checkbox" <% if (estado == 'A') { %>checked<% } %> /> Activo</label>
+		</div>
+	</div>
+    <div class="row show-when-editing <%=inEsRptaCorta ? '' : 'hidden' %>">
+        <div class="col-sm-2 text-right"><label>Preguntas</label></div>
+        <div class="col-sm-10">
+            <label><input type="checkbox" class="muymalo" <% if (muymalo) {%>checked="true"<%}%> /> Muy malo</label>
+            <label style="margin-left: 5px;"><input class="malo" type="checkbox" <% if (malo) {%>checked="true"<%}%> /> Malo</label>
+            <label style="margin-left: 5px;"><input class="regular" type="checkbox" <% if (regular) {%>checked="true"<%}%> /> Regular</label>
+            <label style="margin-left: 5px;"><input class="bueno" type="checkbox" <% if (bueno) {%>checked="true"<%}%> /> Bueno</label>
+            <label style="margin-left: 5px;"><input class="muybueno" type="checkbox" <% if (muybueno) {%>checked="true"<%}%> /> Muy bueno</label>
+        </div>
+    </div>
+    <div class="row hidden-when-editing <%=inEsRptaCorta ? '' : 'hidden' %>">
+        <div class="col-sm-2 text-right"><label>Preguntas</label></div>
+        <div class="col-sm-10">
+            <label><input type="checkbox" <% if (muymalo) {%>checked="true"<%}%> disabled="true" /> Muy malo</label>
+            <label style="margin-left: 5px;"><input type="checkbox" disabled="true" <% if (malo) {%>checked="true"<%}%> /> Malo</label>
+            <label style="margin-left: 5px;"><input type="checkbox" disabled="true" <% if (regular) {%>checked="true"<%}%> /> Regular</label>
+            <label style="margin-left: 5px;"><input type="checkbox" disabled="true" <% if (bueno) {%>checked="true"<%}%> /> Bueno</label>
+            <label style="margin-left: 5px;"><input type="checkbox" disabled="true" <% if (muybueno) {%>checked="true"<%}%> /> Muy bueno</label>
+        </div>
+    </div>
+	<div class="row" style="margin-top: 15px;">
+		<div class="col-sm-offset-2 col-sm-10 clearfix">
+			<button type="button" class="btn btn-primary btn-sm hidden-when-editing pull-left btn-editar"><span class="glyphicon glyphicon-pencil"></span></button>
+			<button type="button" class="btn btn-primary btn-sm show-when-editing pull-left btn-guardar"><span class="glyphicon glyphicon-floppy-disk"></span></button>
+			<button type="button" style="margin-left: 5px;" class="btn btn-default btn-sm show-when-editing pull-left btn-cancelar"><span class="glyphicon glyphicon-remove"></span></button>
+			<button type="button" class="btn btn-danger btn-sm pull-right btn-eliminar"><span class="glyphicon glyphicon-trash"></span></button>
+		</div>
+	</div>
+</div>

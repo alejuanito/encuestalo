@@ -1,0 +1,86 @@
+.board-configuracion {
+	position: relative;
+}
+.titulo {
+	padding-top: 64px;
+}
+.pregunta {
+	padding-top: 10px;
+	padding-bottom: 22px;
+}
+.atencion {
+	padding-top: 10px;
+        font-size: 20px;
+        font-family: ARBONNI0;
+        color: #333;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 120%;
+}
+.user-data {
+	color:black;
+}
+#contador {
+	position:absolute;
+	right: 10px;
+	bottom: 10px;
+}
+input {
+    text-transform:uppercase;
+}
+/* @media only screen and (max-width: 1500px) { */
+/* 	.board-configuracion { */
+/* 		width: 85% !important; */
+/* 		height: 110% !important; */
+/* 		left:0px; */
+/* 	} */
+/* 	.form-configuracion { */
+/* 		position: absolute; */
+/* 		left: 150px; */
+/* 		left:0px; */
+/* 	} */
+/* 	.btn-sgt-config { */
+/* 		position: absolute; */
+/* 		left: 400px; */
+/* 		top: 70px; */
+/* 		left:0px; */
+/* 	} */
+/* } */
+
+/* @media only screen and (max-width: 970px) { */
+/* 	.board-configuracion { */
+/* 		width: 85% !important; */
+/* 		height: 140% !important; */
+/* 		left:0px; */
+/* 	} */
+/* 	.form-configuracion { */
+/* 		position: absolute; */
+/* 		left: 100px; */
+/* 		left:0px; */
+/* 	} */
+/* 	.btn-sgt-config { */
+/* 		position: absolute; */
+/* 		left: 200px; */
+/* 		top: 50px; */
+/* 		left:0px; */
+/* 	} */
+/* } */
+
+/* @media only screen and (max-width: 768px) { */
+/* 	.board-configuracion { */
+/* 		width: 85% !important; */
+/* 		height: 140% !important; */
+/* 		left:0px; */
+/* 	} */
+/* 	.form-configuracion { */
+/* 		position: absolute; */
+/* 		left: 100px; */
+/* 		left:0px; */
+/* 	} */
+/* 	.btn-sgt-config { */
+/* 		position: absolute; */
+/* 		left: 200px; */
+/* 		top: 50px; */
+/* 		left:0px; */
+/* 	} */
+/* } */

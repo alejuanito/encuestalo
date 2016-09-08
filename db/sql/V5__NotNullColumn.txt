@@ -1,0 +1,2 @@
+alter table ectm_atencion
+ALTER COLUMN nu_mesa drop not null

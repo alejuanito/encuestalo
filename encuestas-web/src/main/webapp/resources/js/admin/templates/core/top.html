@@ -1,0 +1,11 @@
+<div class="clearfix">
+    <div class="pull-left">
+        <a id="menu-toggler" href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+    </div>
+    <div id="user-info" class="clearfix pull-right">
+        <div class="pull-left" id="user-image-holder">
+            <img class="img-responsive" src="<%=rootUrl%>/resources/img/bueno.png"/>
+        </div>
+        <div class="pull-left" id="user-data"><span><%=_.isNull(usuarioData.colaborador.cargoColaboradorBean) ? 'Administrador' : usuarioData.colaborador.cargoColaboradorBean.deCargoColaborador%></span> <br /><a href="<%=rootUrl%>/logout">Salir</a></div>
+    </div>
+</div>

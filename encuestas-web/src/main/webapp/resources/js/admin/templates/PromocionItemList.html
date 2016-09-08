@@ -1,0 +1,16 @@
+<td><%=model.coPromocion%></td>
+<td><%=model.deTitulo%></td>
+<td><%=moment(model.feInicioString).format("DD/MM/YYYY")%></td>
+<td><%=moment(model.feFinString).format("DD/MM/YYYY")%></td>
+<td><%=model.local.noLocal%></td>
+<td><%=model.motivoPromocion.deMotivoPromocion%></td>
+<td><%=model.userRegister%></td>
+<% var mostrar = false%>
+<% _.each(usuarioData.usuarioRols, function(num){ if(num.rol.nombre === 'ADMIN'){mostrar=true}}); %>
+<% console.log("mostrar? ", mostrar)%>
+<td>
+<% if(mostrar){%>
+<div class="pull-left"><a title="detalle"  href="#promociones/enviadas/<%=   model.idPromocion===null ? '':  model.idPromocion%>" class="btn btn-xs btn-link btn-edit hidden-when-editing"><span class="glyphicon glyphicon-th-list"></span></a></div>
+<% }%>
+<div class="pull-center"><a title="editar" href="#promociones/edit/<%=   model.idPromocion===null ? '':  model.idPromocion%>" class="btn btn-xs btn-link btn-edit hidden-when-editing"><span class="glyphicon glyphicon-edit"></span></a></div>
+ 

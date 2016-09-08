@@ -1,0 +1,18 @@
+<td><%=idCliente%></td>
+<td><%=persona.apPersona%> <%=persona.amPersona%></td>
+<td><%=persona.noPersona%></td>
+<td><%=persona.tipoDocumento.deCorto%></td>
+<td><%=persona.nuDocumento%></td>
+<td><%=moment(persona.feNacimiento).isValid() ? moment(persona.feNacimientoString).format('DD/MM/YYYY') : ''%></td>
+<td><%=persona.edad%></td>
+<td><%=persona.coSexo%></td>
+<td><%=persona.deEmail%></td>
+<td><%=persona.noTelefonoCelular%></td>
+<td><%=persona.nuTelefonoFijo%></td>
+<td><%=inPromocion ? 'Sí' : 'No'%></td>
+<td><%=_.isNull(ultimoLocalVisitado) ? '' : ultimoLocalVisitado.noLocal%></td>
+<td></td>
+<td></td>
+<td>
+    <a href="#" class="btn btn-link btn-promo" data-toggle="tooltip" title="<%=inPromocion? 'Deshabilitar promociones.' : 'Habilitar promociones'%>"><span class="<%=inPromocion? 'glyphicon glyphicon-gift' : 'glyphicon glyphicon-exclamation-sign'%>"></span></a>
+</td>

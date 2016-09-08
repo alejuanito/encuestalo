@@ -1,0 +1,125 @@
+<h4>Directorio de clientes</h4>
+<div class="row">
+    <div class="col-sm-12">
+        <form>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="apPersona">Apellido paterno</label>
+                        <input type="text" class="form-control input-sm" id="apPersona" value="<%=filters.apPersona%>" />
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="amPersona">Apellido materno</label>
+                        <input type="text" class="form-control input-sm" id="amPersona" value="<%=filters.amPersona%>" />
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="noPersona">Nombre</label>
+                        <input type="text" class="form-control input-sm" id="noPersona" value="<%=filters.noPersona%>" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="nuDocumento">Nro. Documento</label>
+                        <input type="text" class="form-control input-sm" id="nuDocumento" value="<%=filters.nuDocumento%>" />
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="edadDesde">Edad</label>
+                        <div>
+                            entre <input id="edadDesde" type="text" class="form-control input-sm" style="width:60px; display: inline;" value="<%=filters.edadMin%>" /> y <input id="edadHasta" type="text" class="form-control input-sm" style="width:60px; display: inline;" value="<%=filters.edadMax%>" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="idLocal">Local</label>
+                        <select class="form-control input-sm" id="idLocal">
+                            <option>Todos</option>
+                            <% localCollection.each(function (local) { %>
+                            <option value="<%=local.id%>" <%if (local.id == filters.idLocal) {%>selected="true"<% } %>><%=local.get('noLocal')%></option>
+                            <% }) %>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label>Promociones</label>
+                        <select id="recibeNoficaciones" class="form-control input-sm">
+                            <option value="T">Todos</option>
+                            <option value="S" <%if (filters.inPromocional) { %>selected="true"<% } %>>Sí</option>
+                            <option value="N" <%if (_.has(filters, 'inPromocional') && !filters.inPromocional) { %>selected="true"<% } %>>No</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-right">
+                    <button type="button" class="btn btn-primary btn-sm btn-search"><span class="glyphicon glyphicon-search"></span> Buscar</button>
+                    <button type="button" class="btn btn-default btn-sm btn-export" data-type="XLS"><span class="glyphicon glyphicon-export"></span> Exportar excel</button>
+                    <button type="button" class="btn btn-default btn-sm btn-export" data-type="PDF"><span class="glyphicon glyphicon-export"></span> Exportar pdf</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        Cantidad de registros <%=page.totalElements%>, mostrando 30 resultados por página.
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12 text-center">
+        <p>Filtros:
+            <%=_.has(filters, 'nuDocumento') ? 'Documento: '+filters.nuDocumento : ''%>
+            <%=_.has(filters, 'apPersona') ? 'Apellido paterno: '+filters.apPersona : ''%>
+            <%=_.has(filters, 'amPersona') ? 'Apellido materno: '+filters.amPersona : ''%>
+            <%=_.has(filters, 'idLocal') ? 'Local: '+filters.idLocal : ''%>
+            <%=_.has(filters, 'edadMin') ? 'Mayores a '+filters.edadMin : ''%>
+            <%=_.has(filters, 'edadMax') ? 'Menores a '+filters.edadMax : ''%>
+            <%=_.has(filters, 'inPromocional') ? 'Reciben promoción: '+(filters.inPromocional ? 'Sí' : 'No') : ''%>
+        </p>
+    </div>
+</div>
+<table class="table table-bordered table-striped table-hover table-condensed" style="margin-top: 15px;">
+    <thead>
+    <tr>
+        <th>Cod</th>
+        <th>Apellidos</th>
+        <th>Nombres</th>
+        <th>Tipo</th>
+        <th>Documento</th>
+        <th>F. Nacimiento</th>
+        <th>Edad</th>
+        <th>Sexo</th>
+        <th>Email</th>
+        <th>Telf. Celular</th>
+        <th>Telf. Fijo</th>
+        <th>Recibe promociones</th>
+        <th>Local (Ult. Visita)</th>
+        <th>Cant. Encuestas Realizadas</th>
+        <th>Cant. Uso Promoción</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<div class="row">
+    <div class="col-sm-12 text-center">
+        <nav>
+            <ul class="pagination">
+                <li><a id="navigation-prev" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                <% _.each(pages, function (p) { %>
+                <li <%if (p == filters.page) {%>class="active"<%}%>><a class="navigation-page" data-page="<%=p%>" href="#"><%=p+1%></a></li>
+                <% }); %>
+                <li><a id="navigation-next" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+            </ul>
+        </nav>
+    </div>
+</div>

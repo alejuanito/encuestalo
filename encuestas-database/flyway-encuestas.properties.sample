@@ -1,0 +1,5 @@
+flyway.user=admineiuxbxg
+flyway.password=WK3fnXnF1WpL
+flyway.schemas=public
+flyway.locations=filesystem:../db/sql
+flyway.url=jdbc:postgresql://127.0.0.1:5432/encuestas

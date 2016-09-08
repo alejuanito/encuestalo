@@ -1,0 +1,49 @@
+
+<H3> Listado de promociones enviadas</H3>
+<form class="form-inline" style="margin-top: 20px;">
+   
+    <div class="form-group">
+        <label for="feDesde">Desde </label>
+        <input type="date" class="form-control input-sm" style="text-align: center" min="2016-01-01" max="<%=moment(new Date()).format('YYYY-MM-DD')%>" value ="<%=filters.feInicio%>" id="feDesde" >
+    </div>
+    <div class="form-group">
+        <label for="feHasta">Hasta </label>
+        <input type="date" class="form-control input-sm" style="text-align: center" min="2016-01-01" max="<%=moment(new Date()).format('YYYY-MM-DD')%>" value ="<%=filters.feFin%>" id="feHasta" >
+    </div>
+    <div class="form-group">
+        <label for="nuDocumento">Doc.Cliente </label>
+        <input type="text" class="form-control input-sm"   id="nuDocumento" value="<%=filters.nuDocumento%>" >
+    </div>
+    <button type="button" class="btn btn-sm btn-primary" id="btn-consultar"><span class="glyphicon glyphicon-search"></span> Buscar</button>
+    <button id="regresar" type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-arrow-left"></span> Regresar</button>
+    
+</form>
+ 
+<table class="table table-bordered table-striped table-hover table-condensed" style="margin-top: 10px;">
+ 
+    <thead>
+    <tr>
+        <th>Promoción</th>
+        <th>Doc.Cliente</th>
+        <th>Nom.Cliente</th>
+        <th>Email</th>
+        <th>Envio</th>
+        <th>Usuario última actualización</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<div class="row">
+    <div class="col-sm-12 text-center">
+        <nav>
+            <ul class="pagination">
+                <li><a id="navigation-prev" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                <% _.each(pages, function (p) { %>
+                <li <%if (p == filters.page) {%>class="active"<%}%>><a class="navigation-page" data-page="<%=p%>" href="#"><%=p+1%></a></li>
+                <% }); %>
+                <li><a id="navigation-next" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+            </ul>
+        </nav>
+    </div>
+</div>

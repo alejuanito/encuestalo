@@ -1,0 +1,33 @@
+/*!
+ * Loading v1.0 (http://jaxkodex.github.io/simple-template/)
+ * Copyright 2016 jaxkodex
+ * Licensed under MIT (https://github.com/jaxkodex/simple-template/blob/master/LICENSE)
+ */
+ 
+.loading-holder {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	background: rgba(0, 0, 0, 0.3);
+	z-index: 99999;
+	color: #fff;
+}
+
+.loading-message {
+	width: 400px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	margin-left: -200px;
+	top: 50%;
+	margin-top: -100px;
+	text-align: center;
+}
+.sk-wave {
+	margin: 10px auto;
+}
+.sk-wave .sk-rect {
+	background: #fff;
+}

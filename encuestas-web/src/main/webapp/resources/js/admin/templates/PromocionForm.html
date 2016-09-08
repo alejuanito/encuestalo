@@ -1,0 +1,90 @@
+<h3>Promocion: <small><%=model.deTitulo%></small></h3>
+<form class="form-horizontal">
+    <div class="form-group">
+        <label  class="col-sm-1 control-label">Motivo</label>
+        <div class="col-sm-3">
+        	<select class="form-control" id="idMotivoPromocion">
+        		<% _.each(motivoPromocionCollection.toJSON(), function (value) { %>
+						 <option <%=(value.idMotivoPromocion===model.motivoPromocion.idMotivoPromocion?'selected':'')%> value="<%=value.idMotivoPromocion%>" ><%=value.deMotivoPromocion%></option>
+				<% }) %>	
+			</select>
+        </div>
+        <label  class="col-sm-1 control-label">Tipo</label>
+        <div class="col-sm-3">
+        	<select class="form-control" id="idTipoPromocion">
+        		<% _.each(tipoPromocionCollection.toJSON(), function (value) { %>
+						 <option <%=(value.idTipoPromocion===model.tipoPromocion.idTipoPromocion?'selected':'')%> value="<%=value.idTipoPromocion%>" ><%=value.deTipoPromocion%></option>
+				<% }) %>	
+			</select>
+        </div>
+        
+        <label  class="col-sm-1 control-label">Local</label>
+        <div class="col-sm-3">
+        	<select class="form-control" id="idLocal">
+        		<% _.each(localCollection.toJSON(), function (value) { %>
+						 <option  <%=(value.idLocal===model.local.idLocal?'selected':'')%> value="<%=value.idLocal%>" ><%=value.noLocal%></option>
+				<% }) %>	
+		</select>
+        </div>
+    </div>
+     <div class="form-group">
+        <label for="de-encuesta-largo" class="col-sm-1 control-label">Código promoción</label>
+        <div class="col-sm-3">
+            <input id="coPromocion" class="form-control"
+                   value="<%=model.coPromocion%>"/>
+            <span class="help-block"></span>
+        </div>
+        
+        <label for="de-encuesta-largo" class="col-sm-1 control-label">Desde</label>
+        <div class="col-sm-3">
+            <input type="date" class="form-control" style="text-align: center" min="<%=moment(new Date()).format('YYYY-MM-DD')%>" 
+                    value ="<%= (model.feInicio.length===0)? moment(new Date()).format('YYYY-MM-DD'): moment(model.feInicioString).format('YYYY-MM-DD')%>" id="feInicio" >
+            <span class="help-block"></span>
+        </div>
+         
+          <label for="de-encuesta-largo" class="col-sm-1 control-label">Hasta</label>
+        <div class="col-sm-3">
+            <input type="date" class="form-control" style="text-align: center"  min="<%=moment(new Date()).format('YYYY-MM-DD')%>"
+                   value ="<%= (model.feFin.length===0)? moment(new Date()).format('YYYY-MM-DD'): moment(model.feFinString).format('YYYY-MM-DD')%>" id="feFin" >           
+            <span class="help-block"></span>
+        </div>
+    </div>
+     <div class="form-group">
+        
+    </div>
+    <div class="form-group">
+        
+        <label for="de-titulo" class="col-sm-1 control-label">Título</label>
+        <div class="col-sm-11">
+            <input id="deTitulo" class="form-control input-sm"
+                   value="<%=model.deTitulo%>"/>
+            <span class="help-block"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="de-descripcion" class="col-sm-1 control-label">Descripción</label>
+        <div class="col-sm-11">
+            <textarea id="deDescripcion" class="form-control" rows="3"><%=model.deDescripcion%></textarea>
+            <span class="help-block"></span>
+        </div>
+    </div>
+   
+    <div class="col-sm-5" id='fileImage'>
+        <div class="form-inline">
+                <div class="form-group">
+                                <label for="image">Seleccione imagen a cargar   </label>
+                                <input name="image"  type="file" id="image" accept=".jpg, .png" />
+                                <span >Imagen anterior: <%=model.noImagen%></span>
+                                <span class="help-block"></span>
+                </div>					
+        </div>
+    </div>
+    
+    
+    <div class="form-group">
+        <div class="col-sm-12" style="margin-top: 10px;">
+            <button type="button" id="btn-guardar" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-floppy-disk"></span> Guardar</button>
+            <button type="button" id="btn-cancelar" class="btn btn-default btn-sm">Cancelar</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,122 @@
+<h3>Usuario: <small><%=username%></small></h3>
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="nombre" class="col-sm-2 control-label">Nombre</label>
+
+        <div class="col-sm-10">
+            <input id="nombre" class="form-control input-sm" placeholder="Ej. Jorge" value="<%=persona.noPersona%>"/>
+             <span class="help-block"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="apPersona" class="col-sm-2 control-label">Apellido paterno</label>
+
+        <div class="col-sm-10">
+            <input id="apPersona" class="form-control input-sm" placeholder="Ej. Vilca" value="<%=persona.apPersona%>"/>
+             <span class="help-block"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="amPersona" class="col-sm-2 control-label">Apellido materno</label>
+
+        <div class="col-sm-10">
+            <input id="amPersona" class="form-control input-sm" placeholder="Ej. Vilca" value="<%=persona.amPersona%>"/>
+             <span class="help-block"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="noUsuario" class="col-sm-2 control-label">Usuario</label>
+
+        <div class="col-sm-10">
+            <input id="noUsuario" class="form-control input-sm no-text-tranform" placeholder="Ej. jvilca" value="<%=username%>" <% if (!isNew) { %>readonly<% } %> />
+             <span class="help-block"></span>
+        </div>
+    </div>
+    <% if (isNew) { %>
+    <div class="form-group">
+        <label for="password" class="col-sm-2 control-label">Contraseña</label>
+
+        <div class="col-sm-10">
+            <input id="password" class="form-control input-sm" type="password" />
+             <span class="help-block"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="repassword" class="col-sm-2 control-label">Repita contraseña</label>
+
+        <div class="col-sm-10">
+            <input id="repassword" class="form-control input-sm" type="password" />
+             <span class="help-block"></span>
+        </div>
+    </div>
+    <% } %>
+    <div class="form-group">
+        <label for="tipoDocumento" class="col-sm-2 control-label">Tipo documento</label>
+
+        <div class="col-sm-10">
+            <select id="tipoDocumento" class="form-control input-sm">
+                <% _.each(tipoDocumentoData, function (v) {%>
+                    <option value="<%=v.coTipoDocumento%>"><%=v.deLarga%></option>
+                <% }) %>
+            </select>
+             <span class="help-block"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="nuDocumento" class="col-sm-2 control-label">Número de documento</label>
+
+        <div class="col-sm-10">
+            <input id="nuDocumento" class="form-control input-sm" value="<%=persona.nuDocumento%>" />
+             <span class="help-block"></span>
+        </div>
+    </div>
+    
+    
+    <div class="form-group">
+        <label for="cargoColaborador" class="col-sm-2 control-label">Cargo</label>
+
+        <div class="col-sm-10">
+            <select id="cargoColaborador" class="form-control input-sm">
+                <% _.each(cargoColaboradorData, function (v) {%>
+                    <option value="<%=v.coCargoColaborador%>" <% if (cargo == v.coCargoColaborador) {%>selected="true"<% } %>><%=v.deCargoColaborador%></option>
+                <% }) %>
+            </select>
+             <span class="help-block"></span>
+        </div>
+    </div>
+    
+    <div class="form-group">
+    	<label class="control-label col-sm-2">Local</label>
+    	<div class="col-sm-10">
+    		<select id="idLocal" class="form-control">
+    			<% localCollection.each(function (local) { %>
+    			<option value="<%=local.id%>" <% if (colaborador.local.idLocal == local.id) { %>selected="true"<% } %>><%=local.get('noLocal')%></option>
+    			<% }); %>
+    		</select>
+    	</div>
+    </div>
+    
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <label><input id="esUsuario" type="checkbox" <% if (estado == 'A') { %>checked="true"<% } %>/> Activo</label>
+             <span class="help-block"></span>
+        </div>
+    </div>
+    <!-- div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <label><input id="esAdmin" type="checkbox" <% if (inAdmin) { %>checked="true"<% } %>/> Admin</label>
+             <span class="help-block"></span>
+        </div>
+    </div-->
+    <div class="col-sm-12">
+        <h4>Roles</h4>
+    </div>
+    <div id="rol-container" class="form-group">
+    </div>
+    <div class="form-group">
+        <div class="col-sm-12" style="margin-top: 10px;">
+            <button type="button" id="btn-guardar" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-floppy-disk"></span> Guardar</button>
+            <button type="button" id="btn-cancelar" class="btn btn-default btn-sm">Cancelar</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,52 @@
+<h3>Encuesta: <small><%=deEncuestaCorto%></small></h3>
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="de-encuesta-corta" class="col-sm-2 control-label">Descripción corta</label>
+
+        <div class="col-sm-10">
+            <input id="de-encuesta-corta" class="form-control input-sm deEncuestaCorto" placeholder="Ej. Encuesta de verano"
+                   value="<%=deEncuestaCorto%>"/>
+             <span class="help-block"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="de-encuesta-largo" class="col-sm-2 control-label">Descripción larga</label>
+
+        <div class="col-sm-10">
+            <textarea id="de-encuesta-largo" class="form-control deEncuestaLargo" rows="3"><%=deEncuestaLargo%></textarea>
+            <span class="help-block"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="id-local" class="col-sm-2 control-label">Local</label>
+
+        <div class="col-sm-4">
+        	<select id="id-local" class="form-control">
+        		<% localCollection.each(function (l) { %>
+        		<option value="<%=l.id%>" <%if (l.id == local.idLocal) {%>selected="true"<% } %>><%=l.get('noLocal')%></option>
+        		<% }); %>
+        	</select>
+            <span class="help-block"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-4 col-sm-offset-2">
+            <label><input type="checkbox" id="esPlantillaEncuesta" <%if (esPlantillaEncuesta == 'A') {%>checked="true"<%}%> /> Activa</label>
+        </div>
+    </div>
+    <div class="form-group hidden-when-new">
+    	<label class="col-sm-2 control-label">Preguntas</label>
+    	<div class="col-sm-10">
+    		<div style="margin-bottom: 10px;">
+    			<button id="btn-agregar-pregunta" class="btn btn-sm btn-info" type="button"><span class="glyphicon glyphicon-plus"></span> Agregar pregunta</button>
+    		</div>
+    		<div id="preguntas-container"></div>
+    	</div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-12" style="margin-top: 10px;">
+            <button type="button" id="btn-guardar" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-floppy-disk"></span> Guardar</button>
+            <button type="button" id="btn-cancelar" class="btn btn-default btn-sm">Cancelar</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,1 @@
+D:\encuestas\encuestas\db>F:\BK_Alejandro\Alejandro\"Repositorio de proyectos"\encuesta-web\apps\flyway-3.2.1\flyway migrate -url=jdbc:postgresql://localhost:5433/encuestas -user=postgres -password=postgres -locations=filesystem:F:\BK_Alejandro\Alejandro\"Repositorio de proyectos"\encuesta-web\encuestas\db\sql

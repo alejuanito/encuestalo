@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.7">
+ <project-name>encuestas</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="PlayPen Database" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB1" populated="true" UUID="06e676f4-07f7-407e-ab35-d936e5d01e08" name="ECTM_EMPRESA" objectType="TABLE" physicalName="ECTM_EMPRESA" >
+   <remarks></remarks>
+   <folder id="FOLTAB11" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL2" populated="true" UUID="81a57d5f-df73-4610-ab32-fa04d65267b5" autoIncrement="true" autoIncrementSequenceName="ECTM_EMPRESA_ID_EMPRESA_SEQ" defaultValue="" name="ID_EMPRESA" nullable="0" physicalName="ID_EMPRESA" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL3" populated="true" UUID="8ee56708-a559-473a-b8a8-735fbff8cc70" autoIncrement="false" autoIncrementSequenceName="ECTM_EMPRESA_DE_EMPRESA_seq" defaultValue="" name="DE_EMPRESA" nullable="0" physicalName="DE_EMPRESA" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL4" populated="true" UUID="1d03986b-b6b7-4e1f-9a11-012f084de23c" autoIncrement="false" autoIncrementSequenceName="ECTM_EMPRESA_DE_DIRECCION_seq" defaultValue="" name="DE_DIRECCION" nullable="0" physicalName="DE_DIRECCION" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL5" populated="true" UUID="9812327e-32d6-419d-b3cc-9d08d0a9b7af" autoIncrement="false" autoIncrementSequenceName="ECTM_EMPRESA_FE_CREA_REGISTRO_seq" defaultValue="" name="FE_CREA_REGISTRO" nullable="0" physicalName="FE_CREA_REGISTRO" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="93" userDefinedTypeUUID="6497d8de-0e00-40d6-a42e-e2adca83be64" >
+     <remarks></remarks>
+    </column>
+    <column id="COL6" populated="true" UUID="8d5caccc-a06c-4f3b-98d2-5b209e05a2d8" autoIncrement="false" autoIncrementSequenceName="ECTM_EMPRESA_ID_CREA_REGISTRO_seq" defaultValue="" name="ID_CREA_REGISTRO" nullable="0" physicalName="ID_CREA_REGISTRO" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB13" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB12" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB14" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX7" populated="true" UUID="dfe11e4c-cbb8-4e8e-8141-27a36e52c2fe" clustered="false" name="ECTM_EMPRESA_PK" physicalName="ectm_empresa_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC8" populated="true" UUID="96623235-6c81-4457-b533-52fc166fe566" ascendingOrDescending="UNSPECIFIED" column-ref="COL2" name="ID_EMPRESA" physicalName="ID_EMPRESA" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB9" populated="true" UUID="b3480cd3-b042-4ad8-9d7a-e7188a2b8c46" name="ECTM_LOCAL" objectType="TABLE" physicalName="ECTM_LOCAL" >
+   <remarks></remarks>
+   <folder id="FOLTAB91" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL10" populated="true" UUID="eec063ef-0b8c-4357-aade-707045be1566" autoIncrement="true" autoIncrementSequenceName="ECTM_LOCAL_ID_LOCAL_SEQ" defaultValue="" name="ID_LOCAL" nullable="0" physicalName="ID_LOCAL" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL11" populated="true" UUID="76e07189-af53-4a05-8c51-7cd8a29b2d32" autoIncrement="false" autoIncrementSequenceName="ECTM_EMPRESA_ID_EMPRESA_seq" defaultValue="" name="ID_EMPRESA" nullable="0" physicalName="ID_EMPRESA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB93" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB92" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB94" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX12" populated="true" UUID="39214163-3cb0-492f-a00e-892434c5b990" clustered="false" name="ECTM_LOCAL_PK" physicalName="ectm_local_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC13" populated="true" UUID="5e5d63dd-81de-4d42-99e1-0277e5eee48c" ascendingOrDescending="UNSPECIFIED" column-ref="COL10" name="ID_LOCAL" physicalName="ID_LOCAL" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB14" populated="true" UUID="33a1a0a0-587d-4e8b-a0e9-6849b0a573d2" name="ECTC_PLANTILLA_ENCUESTA" objectType="TABLE" physicalName="ECTC_PLANTILLA_ENCUESTA" >
+   <remarks></remarks>
+   <folder id="FOLTAB141" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL15" populated="true" UUID="b8294b5e-b6d7-4cc7-bb5e-b6b2ec7159bf" autoIncrement="true" autoIncrementSequenceName="ECTC_PLANTILLA_ENCUESTA_ID_PLANTILLA_ENCUESTA_SEQ" defaultValue="" name="ID_PLANTILLA_ENCUESTA" nullable="0" physicalName="ID_PLANTILLA_ENCUESTA" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL16" populated="true" UUID="c60a2910-a0a4-4358-b2bf-d6997436a7d8" autoIncrement="false" autoIncrementSequenceName="ECTM_EMPRESA_ID_EMPRESA_seq" defaultValue="" name="ID_EMPRESA" nullable="0" physicalName="ID_EMPRESA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL17" populated="true" UUID="59bc395f-fc94-42bb-8356-cbfaee090146" autoIncrement="false" autoIncrementSequenceName="ECTC_PLANTILLA_ENCUESTA_no_encuesta_largo_seq" defaultValue="" name="no_encuesta_largo" nullable="0" physicalName="no_encuesta_largo" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL18" populated="true" UUID="b67b7334-cbb8-46fe-bc86-aab2190d18cf" autoIncrement="false" autoIncrementSequenceName="ECTC_PLANTILLA_ENCUESTA_no_encuesta_corto_seq" defaultValue="" name="no_encuesta_corto" nullable="0" physicalName="no_encuesta_corto" precision="30" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL19" populated="true" UUID="70c89fb6-8938-4e65-a3d4-229e5910f7fb" autoIncrement="false" autoIncrementSequenceName="ECTC_PLANTILLA_ENCUESTA_co_tipo_encuesta_seq" defaultValue="" name="co_tipo_encuesta" nullable="0" physicalName="co_tipo_encuesta" precision="4" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="1" userDefinedTypeUUID="67ddc63f-5541-4dd1-9236-632d9d155e80" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB143" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB142" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB144" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX20" populated="true" UUID="d976c707-5192-4b71-92c4-3b0f19e0419d" clustered="false" name="ECTC_PLANTILLA_ENCUESTA_pk" physicalName="ectc_plantilla_encuesta_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC21" populated="true" UUID="bacef3b6-05b6-4082-94aa-76f6553a180f" ascendingOrDescending="UNSPECIFIED" column-ref="COL15" name="ID_PLANTILLA_ENCUESTA" physicalName="ID_PLANTILLA_ENCUESTA" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB22" populated="true" UUID="55b6b7de-1810-47cc-9a02-21fec1cbbeb1" name="ECTD_PLANTILLA_ENCUESTA" objectType="TABLE" physicalName="ECTD_PLANTILLA_ENCUESTA" >
+   <remarks></remarks>
+   <folder id="FOLTAB221" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL23" populated="true" UUID="937f9536-1a8c-4361-8c2c-cb8486b928e4" autoIncrement="true" autoIncrementSequenceName="ECTD_PLANTILLA_ENCUESTA_ID_PLANTILLA_ENCUESTA_DETALLE_SEQ" defaultValue="" name="ID_PLANTILLA_ENCUESTA_DETALLE" nullable="0" physicalName="ID_PLANTILLA_ENCUESTA_DETALLE" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL24" populated="true" UUID="6e74be22-e1d9-465a-9aef-2512ea41edaa" autoIncrement="false" autoIncrementSequenceName="ECTC_PLANTILLA_ENCUESTA_New Column_seq" defaultValue="" name="ID_PLANTILLA_ENCUESTA" nullable="0" physicalName="ID_PLANTILLA_ENCUESTA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL25" populated="true" UUID="f67da2cc-f578-4f1b-8da6-9dd2e033bdba" autoIncrement="false" autoIncrementSequenceName="ECTD_PLANTILLA_ENCUESTA_NO_PREGUNTA_seq" defaultValue="" name="NO_PREGUNTA" nullable="0" physicalName="NO_PREGUNTA" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB223" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB222" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB224" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX26" populated="true" UUID="7d73579e-d17f-433c-a7a3-9751684a696c" clustered="false" name="ECTD_PLANTILLA_ENCUESTA_PK" physicalName="ectd_plantilla_encuesta_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC27" populated="true" UUID="2e440629-b204-4739-b8b4-913c01c1483f" ascendingOrDescending="UNSPECIFIED" column-ref="COL23" name="ID_PLANTILLA_ENCUESTA_DETALLE" physicalName="ID_PLANTILLA_ENCUESTA_DETALLE" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB28" populated="true" UUID="7f081f8a-3268-47ff-b25f-530413b1a485" name="ECTM_AREA" objectType="TABLE" physicalName="ECTM_AREA" >
+   <remarks></remarks>
+   <folder id="FOLTAB281" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL29" populated="true" UUID="108831cb-993b-43c9-9aa8-654a442272bc" autoIncrement="true" autoIncrementSequenceName="ECTM_AREA_ID_AREA_SEQ" defaultValue="" name="ID_AREA" nullable="0" physicalName="ID_AREA" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL30" populated="true" UUID="f62d6f5f-76a4-419d-9070-80156e984407" autoIncrement="false" autoIncrementSequenceName="ECTM_LOCAL_ID_LOCAL_seq" defaultValue="" name="ID_LOCAL" nullable="0" physicalName="ID_LOCAL" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB283" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB282" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB284" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX31" populated="true" UUID="0901caf9-6eb1-4051-b7c3-caad8ff774dc" clustered="false" name="ECTM_AREA_PK" physicalName="ectm_area_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC32" populated="true" UUID="796e83e4-7c4d-423a-82f8-34a9b0900605" ascendingOrDescending="UNSPECIFIED" column-ref="COL29" name="ID_AREA" physicalName="ID_AREA" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB33" populated="true" UUID="5c621735-ef49-4895-a0a9-e6c33be08bb7" name="ECTC_ENCUESTA" objectType="TABLE" physicalName="ECTC_ENCUESTA" >
+   <remarks></remarks>
+   <folder id="FOLTAB331" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL34" populated="true" UUID="03462765-3fc7-4def-bf45-22fe309204fc" autoIncrement="true" autoIncrementSequenceName="ECTC_ENCUESTA_ID_ENCUESTA_SEQ" defaultValue="" name="ID_ENCUESTA" nullable="0" physicalName="ID_ENCUESTA" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL35" populated="true" UUID="339bf9d1-91c6-4a2d-8390-d77542c61013" autoIncrement="false" autoIncrementSequenceName="ECTM_ATENCION_ID_ATENCION_seq" defaultValue="" name="ID_ATENCION" nullable="0" physicalName="ID_ATENCION" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB333" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB332" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB334" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX36" populated="true" UUID="8fad8e84-a4fc-4114-ae1c-1a27153621fe" clustered="false" name="ECTC_ENCUESTA_PK" physicalName="ectc_encuesta_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC37" populated="true" UUID="3495d702-c2f0-469f-b268-87f79559325c" ascendingOrDescending="UNSPECIFIED" column-ref="COL34" name="ID_ENCUESTA" physicalName="ID_ENCUESTA" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB38" populated="true" UUID="d084271a-e3c1-4465-b17c-85df0cc54f45" name="ECTM_PARAMETRO" objectType="TABLE" physicalName="ECTM_PARAMETRO" >
+   <remarks></remarks>
+   <folder id="FOLTAB381" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL39" populated="true" UUID="0b01547b-ab55-4aa0-afa3-6f7e35f51d8a" autoIncrement="false" autoIncrementSequenceName="ECTM_PARAMETRO_CO_PARAMETRO_seq" defaultValue="" name="CO_PARAMETRO" nullable="0" physicalName="CO_PARAMETRO" precision="250" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL40" populated="true" UUID="88773e84-9f16-4138-9db8-647131650a98" autoIncrement="false" autoIncrementSequenceName="ECTM_EMPRESA_ID_EMPRESA_seq" defaultValue="" name="ID_EMPRESA" nullable="0" physicalName="ID_EMPRESA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL41" populated="true" UUID="cf60f0ba-8982-46d2-b2ec-223c714092ac" autoIncrement="false" autoIncrementSequenceName="ECTM_PARAMETRO_DE_PARAMETRO_seq" defaultValue="" name="DE_PARAMETRO" nullable="0" physicalName="DE_PARAMETRO" precision="250" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL42" populated="true" UUID="2320f768-b8dd-46a2-8f79-5418aa9ae8a5" autoIncrement="false" autoIncrementSequenceName="ECTM_PARAMETRO_VA_PARAMETRO_seq" defaultValue="" name="VA_PARAMETRO" nullable="0" physicalName="VA_PARAMETRO" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB383" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB382" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB384" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX43" populated="true" UUID="99fed1d4-932e-4608-a38a-78c94741e26a" clustered="false" name="ECTM_PARAMETRO_PK" physicalName="ectm_parametro_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC44" populated="true" UUID="768253db-fb63-4484-9847-18d406fae3d2" ascendingOrDescending="UNSPECIFIED" column-ref="COL39" name="CO_PARAMETRO" physicalName="CO_PARAMETRO" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB45" populated="true" UUID="c0d4a633-994a-46ce-bd2f-44978db6b94b" name="ECTM_PERSONA" objectType="TABLE" physicalName="ECTM_PERSONA" >
+   <remarks></remarks>
+   <folder id="FOLTAB451" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL46" populated="true" UUID="2097f786-dd78-4dcb-badc-c1180d384870" autoIncrement="true" autoIncrementSequenceName="ECTM_PERSONA_ID_PERSONA_SEQ" defaultValue="" name="ID_PERSONA" nullable="0" physicalName="ID_PERSONA" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL47" populated="true" UUID="7179b9c0-f4b2-45ee-ab7c-47e8d3e50664" autoIncrement="false" autoIncrementSequenceName="ECTM_PERSONA_AM_PERSONA_seq" defaultValue="" name="AM_PERSONA" nullable="0" physicalName="AM_PERSONA" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL48" populated="true" UUID="99c0f6d4-2285-4af7-b358-ebf2067906ff" autoIncrement="false" autoIncrementSequenceName="ECTM_TIPO_DOCUMENTO_New Column_seq" defaultValue="" name="CO_TIPO_DOCUMENTO" nullable="0" physicalName="CO_TIPO_DOCUMENTO" precision="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL49" populated="true" UUID="73a6d80d-c755-4415-ade7-319f6bf4f1ef" autoIncrement="false" autoIncrementSequenceName="ECTM_PERSONA_NO_PERSONA_seq" defaultValue="" name="NO_PERSONA" nullable="0" physicalName="NO_PERSONA" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL50" populated="true" UUID="a8ea9c57-5478-4463-bf7a-654fec314efe" autoIncrement="false" autoIncrementSequenceName="ECTM_PERSONA_AP_PERSONA_seq" defaultValue="" name="AP_PERSONA" nullable="0" physicalName="AP_PERSONA" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL51" populated="true" UUID="f67b698c-d0ce-4eac-a532-6ee91a61224c" autoIncrement="false" autoIncrementSequenceName="ECTM_PERSONA_FE_NACIMIENTO_seq" defaultValue="" name="FE_NACIMIENTO" nullable="0" physicalName="FE_NACIMIENTO" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL52" populated="true" UUID="8d9e268d-b255-45ec-b00c-f63ad2c13513" autoIncrement="false" autoIncrementSequenceName="ECTM_PERSONA_NU_TELEFONO_FIJO_seq" defaultValue="" name="NU_TELEFONO_FIJO" nullable="1" physicalName="NU_TELEFONO_FIJO" precision="10" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL53" populated="true" UUID="7cc19971-3539-47a0-8ebd-69ea4cfa7d08" autoIncrement="false" autoIncrementSequenceName="ECTM_PERSONA_NU_TELEFONO_CELULAR_seq" defaultValue="" name="NU_TELEFONO_CELULAR" nullable="0" physicalName="NU_TELEFONO_CELULAR" precision="10" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL54" populated="true" UUID="52cb3984-35a1-4865-81f7-50846fdc1313" autoIncrement="false" autoIncrementSequenceName="ECTM_PERSONA_DE_EMAIL_seq" defaultValue="" name="DE_EMAIL" nullable="0" physicalName="DE_EMAIL" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL55" populated="true" UUID="540a8a4c-fcd8-4082-89f0-99614fb54be4" autoIncrement="false" autoIncrementSequenceName="ECTM_PERSONA_ES_PERSONA_seq" defaultValue="" name="ES_PERSONA" nullable="0" physicalName="ES_PERSONA" precision="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL56" populated="true" UUID="2dfebd34-633e-422b-ae93-2a0f55665e42" autoIncrement="false" autoIncrementSequenceName="ECTM_PERSONA_NU_DOCUMENTO_seq" defaultValue="" name="NU_DOCUMENTO" nullable="0" physicalName="NU_DOCUMENTO" precision="15" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL57" populated="true" UUID="f0cbb044-a0b3-48c8-9c18-b670fff79d12" autoIncrement="false" autoIncrementSequenceName="ECTM_PERSONA_CO_SEXO_seq" defaultValue="" name="CO_SEXO" nullable="0" physicalName="CO_SEXO" precision="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB453" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB452" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB454" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX58" populated="true" UUID="d60d09cb-c569-44ea-8a72-533884e72d53" clustered="false" name="ECTM_PERSONA_PK" physicalName="ectm_persona_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC59" populated="true" UUID="d4a368a8-f9d0-4280-b83a-25ed9d88c562" ascendingOrDescending="UNSPECIFIED" column-ref="COL46" name="ID_PERSONA" physicalName="ID_PERSONA" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB60" populated="true" UUID="9e8c8cc3-e9ac-47ff-b372-58e04cf9db07" name="ECTM_CLIENTE" objectType="TABLE" physicalName="ECTM_CLIENTE" >
+   <remarks></remarks>
+   <folder id="FOLTAB601" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL61" populated="true" UUID="38c53741-cf46-4761-8b88-addf13dbdf6c" autoIncrement="true" autoIncrementSequenceName="ECTM_CLIENTE_ID_CLIENTE_SEQ" defaultValue="" name="ID_CLIENTE" nullable="0" physicalName="ID_CLIENTE" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL62" populated="true" UUID="15f91889-6581-4835-b088-7b382924d9da" autoIncrement="false" autoIncrementSequenceName="ECTM_PERSONA_ID_PERSONA_seq" defaultValue="" name="ID_PERSONA" nullable="0" physicalName="ID_PERSONA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL63" populated="true" UUID="1da53f4c-d60e-4f24-b7d5-7d4a40060e12" autoIncrement="false" autoIncrementSequenceName="ECTM_EMPRESA_ID_EMPRESA_seq" defaultValue="" name="ID_EMPRESA" nullable="0" physicalName="ID_EMPRESA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB603" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB602" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB604" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX64" populated="true" UUID="b90686b0-1a2e-4fba-9f5a-9295c282fbe2" clustered="false" name="ECTM_CLIENTE_PK" physicalName="ectm_cliente_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC65" populated="true" UUID="65ba83b1-1601-468b-9f54-e914e35941cb" ascendingOrDescending="UNSPECIFIED" column-ref="COL61" name="ID_CLIENTE" physicalName="ID_CLIENTE" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB66" populated="true" UUID="f23f1a96-7dc9-40b6-a96b-1d5a632c9ec5" name="ECTM_COLABORADOR" objectType="TABLE" physicalName="ECTM_COLABORADOR" >
+   <remarks></remarks>
+   <folder id="FOLTAB661" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL67" populated="true" UUID="42b1a3f1-9148-4bb7-810f-01b6d4f9e175" autoIncrement="false" autoIncrementSequenceName="ECTM_COLABORADOR_ID_COLABORADOR_seq" defaultValue="" name="ID_COLABORADOR" nullable="0" physicalName="ID_COLABORADOR" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL68" populated="true" UUID="4f6e6061-dae9-4a9d-9ccc-0488e63d4a5e" autoIncrement="false" autoIncrementSequenceName="ECTM_PERSONA_ID_PERSONA_seq" defaultValue="" name="ID_PERSONA" nullable="0" physicalName="ID_PERSONA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL69" populated="true" UUID="11e73d47-22ba-4530-8b80-cdde8256fc59" autoIncrement="false" autoIncrementSequenceName="ECTM_COLABORADOR_ID_LOCAL_seq" defaultValue="" name="ID_LOCAL" nullable="0" physicalName="ID_LOCAL" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB663" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB662" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB664" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX70" populated="true" UUID="1ecee1e5-bc61-483f-83be-db7d6ef8279d" clustered="false" name="ECTM_COLABORADOR_PK" physicalName="ectm_colaborador_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC71" populated="true" UUID="0ecda2da-c586-49a6-b903-e8f2bffeaba8" ascendingOrDescending="UNSPECIFIED" column-ref="COL67" name="ID_COLABORADOR" physicalName="ID_COLABORADOR" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB72" populated="true" UUID="6027790c-fc80-4acc-be4e-6a9c818aa368" name="ECTM_ATENCION" objectType="TABLE" physicalName="ECTM_ATENCION" >
+   <remarks></remarks>
+   <folder id="FOLTAB721" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL73" populated="true" UUID="c5f041cd-192f-4cf4-ba14-12c6a239a2f8" autoIncrement="true" autoIncrementSequenceName="ECTM_ATENCION_ID_ATENCION_SEQ" defaultValue="" name="ID_ATENCION" nullable="0" physicalName="ID_ATENCION" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL74" populated="true" UUID="05088306-600d-4be1-b635-b00284182530" autoIncrement="false" autoIncrementSequenceName="ECTM_ATENCION_NU_MESA_seq" defaultValue="" name="NU_MESA" nullable="0" physicalName="NU_MESA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL75" populated="true" UUID="78e74a7b-a8cf-4b8f-9500-69756bab5294" autoIncrement="false" autoIncrementSequenceName="ECTM_COLABORADOR_New Column_seq" defaultValue="" name="ID_COLABORADOR" nullable="0" physicalName="ID_COLABORADOR" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL76" populated="true" UUID="97b0f345-12f9-4cbf-b86c-14bad6121fc5" autoIncrement="false" autoIncrementSequenceName="ECTM_AREA_New Column_seq" defaultValue="" name="ID_AREA" nullable="0" physicalName="ID_AREA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB723" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB722" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB724" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX77" populated="true" UUID="a19fce74-d8e2-47ac-b336-8cb000d595d2" clustered="false" name="ECTM_ATENCION_PK" physicalName="ectm_atencion_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC78" populated="true" UUID="646234ac-b85c-4dc4-a5b1-8b203b83825a" ascendingOrDescending="UNSPECIFIED" column-ref="COL73" name="ID_ATENCION" physicalName="ID_ATENCION" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB79" populated="true" UUID="1bf0843a-211f-4747-bef2-4af0d8d0e70b" name="ECTD_ENCUESTA_RESPUESTA" objectType="TABLE" physicalName="ECTD_ENCUESTA_RESPUESTA" >
+   <remarks></remarks>
+   <folder id="FOLTAB791" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL80" populated="true" UUID="da8e504f-4c7b-42c6-aa1e-9578ee9807ac" autoIncrement="true" autoIncrementSequenceName="ECTD_ENCUESTA_RESPUESTA_ID_ENCUESTA_RESPUESTA_SEQ" defaultValue="" name="ID_ENCUESTA_RESPUESTA" nullable="0" physicalName="ID_ENCUESTA_RESPUESTA" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL81" populated="true" UUID="80ff8147-cbca-4ca9-ba6c-cf6500a6f55b" autoIncrement="false" autoIncrementSequenceName="ECTD_PLANTILLA_ENCUESTA_ID_PLANTILLA_ENCUESTA_DETALLE_seq" defaultValue="" name="ID_PLANTILLA_ENCUESTA_DETALLE" nullable="0" physicalName="ID_PLANTILLA_ENCUESTA_DETALLE" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL82" populated="true" UUID="bcdf522d-117e-4e44-89cc-f8cf8af6b96c" autoIncrement="false" autoIncrementSequenceName="ECTC_ENCUESTA_ID_ENCUESTA_seq" defaultValue="" name="ID_ENCUESTA" nullable="0" physicalName="ID_ENCUESTA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB793" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB792" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB794" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX83" populated="true" UUID="335e5aed-a97c-42fd-8df0-27475d9b2ddf" clustered="false" name="ECTD_ENCUESTA_RESPUESTA_PK" physicalName="ectd_encuesta_respuesta_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC84" populated="true" UUID="fb6261bd-5c78-45f2-9be1-b4e4c231f8dc" ascendingOrDescending="UNSPECIFIED" column-ref="COL80" name="ID_ENCUESTA_RESPUESTA" physicalName="ID_ENCUESTA_RESPUESTA" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB85" populated="true" UUID="a04e78db-f313-4ad1-8e47-93b91f51919f" name="ECTM_TIPO_PROMOCION" objectType="TABLE" physicalName="ECTM_TIPO_PROMOCION" >
+   <remarks></remarks>
+   <folder id="FOLTAB851" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL86" populated="true" UUID="2508727e-c1a0-42c3-8a2b-d8f76750a0c3" autoIncrement="true" autoIncrementSequenceName="ECTM_TIPO_PROMOCION_ID_TIPO_PROMOCION_seq" defaultValue="" name="ID_TIPO_PROMOCION" nullable="0" physicalName="ID_TIPO_PROMOCION" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB853" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB852" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB854" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX87" populated="true" UUID="c68a9320-d90a-4bf6-a0b4-dc1cd6139c4d" clustered="false" name="ECTM_TIPO_PROMOCION_PK" physicalName="ectm_tipo_promocion_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC88" populated="true" UUID="6e995fdf-687d-4120-8b39-c96f7f75c977" ascendingOrDescending="UNSPECIFIED" column-ref="COL86" name="ID_TIPO_PROMOCION" physicalName="ID_TIPO_PROMOCION" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB89" populated="true" UUID="1d3c819c-aa13-41f5-a54a-e379008ad755" name="ECTM_MOTIVO_PROMOCION" objectType="TABLE" physicalName="ECTM_MOTIVO_PROMOCION" >
+   <remarks></remarks>
+   <folder id="FOLTAB891" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL90" populated="true" UUID="d812d928-d3e9-47e3-84f6-2e6352abe522" autoIncrement="true" autoIncrementSequenceName="ECTM_MOTIVO_PROMOCION_ID_MOTIVO_PROMOCION_SEQ" defaultValue="" name="ID_MOTIVO_PROMOCION" nullable="0" physicalName="ID_MOTIVO_PROMOCION" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB893" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB892" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB894" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX91" populated="true" UUID="bbd06633-7742-4fdd-9fc4-c9fc8b87fcb9" clustered="false" name="ECTM_MOTIVO_PROMOCION_PK" physicalName="ectm_motivo_promocion_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC92" populated="true" UUID="39a07ed4-2ebc-45f6-adfd-326d2992437b" ascendingOrDescending="UNSPECIFIED" column-ref="COL90" name="ID_MOTIVO_PROMOCION" physicalName="ID_MOTIVO_PROMOCION" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB93" populated="true" UUID="4c0855a4-39ee-443b-ba2b-2ceaac877a30" name="ECTM_PROMOCION" objectType="TABLE" physicalName="ECTM_PROMOCION" >
+   <remarks></remarks>
+   <folder id="FOLTAB931" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL94" populated="true" UUID="4f25fe68-e16f-4dab-8bbf-33ba47a26571" autoIncrement="true" autoIncrementSequenceName="ECTM_PROMOCION_ID_PROMOCION_seq" defaultValue="" name="ID_PROMOCION" nullable="0" physicalName="ID_PROMOCION" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL95" populated="true" UUID="d1b54c6b-c2fd-43f4-99f9-71bf2b6586a0" autoIncrement="false" autoIncrementSequenceName="ECTM_EMPRESA_ID_EMPRESA_seq" defaultValue="" name="ID_EMPRESA" nullable="0" physicalName="ID_EMPRESA" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL96" populated="true" UUID="615cc7d4-3271-4a7d-b86c-86050a1228b3" autoIncrement="false" autoIncrementSequenceName="ECTM_MOTIVO_PROMOCION_New Column_seq" defaultValue="" name="ID_MOTIVO_PROMOCION" nullable="0" physicalName="ID_MOTIVO_PROMOCION" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL97" populated="true" UUID="dbc3a555-0945-4abf-bb91-e9a4067e4c33" autoIncrement="false" autoIncrementSequenceName="ECTM_TIPO_PROMOCION_ID_TIPO_PROMOCION_seq" defaultValue="" name="ID_TIPO_PROMOCION" nullable="0" physicalName="ID_TIPO_PROMOCION" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB933" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB932" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB934" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX98" populated="true" UUID="15083ed4-ee6c-4063-8c40-9a9310d21593" clustered="false" name="ECTM_PROMOCION_PK" physicalName="ectm_promocion_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC99" populated="true" UUID="b970577b-0d3c-4d3f-8309-1b4555bda578" ascendingOrDescending="UNSPECIFIED" column-ref="COL94" name="ID_PROMOCION" physicalName="ID_PROMOCION" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB100" populated="true" UUID="664edf22-14b8-4e4f-8764-491668d0550e" name="ECTC_PROMOCION_ENVIADA" objectType="TABLE" physicalName="ECTC_PROMOCION_ENVIADA" >
+   <remarks></remarks>
+   <folder id="FOLTAB1001" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL101" populated="true" UUID="a8de825b-6652-444c-81f2-dfccb53d39c9" autoIncrement="true" autoIncrementSequenceName="ECTC_PROMOCION_ENVIADA_ID_PROMOCION_ENVIADA_seq" defaultValue="" name="ID_PROMOCION_ENVIADA" nullable="0" physicalName="ID_PROMOCION_ENVIADA" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL102" populated="true" UUID="82633b8e-3a10-4034-b296-c3d39d803434" autoIncrement="false" autoIncrementSequenceName="ECTM_CLIENTE_ID_CLIENTE_seq" defaultValue="" name="ID_CLIENTE" nullable="0" physicalName="ID_CLIENTE" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL103" populated="true" UUID="b53fcc4a-d9ef-4e01-bb92-eb5d1b2a706e" autoIncrement="false" autoIncrementSequenceName="ECTM_PROMOCION_New Column_seq" defaultValue="" name="ID_PROMOCION" nullable="0" physicalName="ID_PROMOCION" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB1003" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB1002" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB1004" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX104" populated="true" UUID="f36c8cf6-33a5-4670-8b1c-cfa05c40aa3c" clustered="false" name="ECTC_PROMOCION_ENVIADA_PK" physicalName="ectc_promocion_enviada_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC105" populated="true" UUID="048bbc3d-a0e3-48a9-9726-bcf65e59cfb8" ascendingOrDescending="UNSPECIFIED" column-ref="COL101" name="ID_PROMOCION_ENVIADA" physicalName="ID_PROMOCION_ENVIADA" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB106" populated="true" UUID="861c3197-72d9-46ec-98a1-03f9db429a12" name="ECTM_TIPO_DOCUMENTO" objectType="TABLE" physicalName="ECTM_TIPO_DOCUMENTO" >
+   <remarks></remarks>
+   <folder id="FOLTAB1061" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL107" populated="true" UUID="6aeadf31-4528-4523-aa4e-9792c8cad7d2" autoIncrement="false" autoIncrementSequenceName="ECTM_TIPO_DOCUMENTO_CO_TIPO_DOCUMENTO_seq" defaultValue="" name="CO_TIPO_DOCUMENTO" nullable="0" physicalName="CO_TIPO_DOCUMENTO" precision="2" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL108" populated="true" UUID="104f0de8-3450-4856-9ee3-63fcad6fba78" autoIncrement="false" autoIncrementSequenceName="ECTM_TIPO_DOCUMENTO_DE_LARGA_seq" defaultValue="" name="DE_LARGA" nullable="0" physicalName="DE_LARGA" precision="30" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL109" populated="true" UUID="fb8df3c7-015d-4796-984b-5e71c4dfeb05" autoIncrement="false" autoIncrementSequenceName="ECTM_TIPO_DOCUMENTO_DE_CORTO_seq" defaultValue="" name="DE_CORTO" nullable="0" physicalName="DE_CORTO" precision="15" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB1063" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB1062" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB1064" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX110" populated="true" UUID="fb8a2593-d01d-41e3-a242-c3f37e2788dd" clustered="false" name="ECTM_TIPO_DOCUMENTO_PK" physicalName="ectm_tipo_documento_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC111" populated="true" UUID="f9c5eeda-72cf-4697-a681-f33bff847da7" ascendingOrDescending="UNSPECIFIED" column-ref="COL107" name="CO_TIPO_DOCUMENTO" physicalName="CO_TIPO_DOCUMENTO" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB112" populated="true" UUID="0dd9bd6f-715f-4220-ac7a-4956ee599258" name="ectd_plantilla_encuesta_respuesta" objectType="TABLE" physicalName="ectd_plantilla_encuesta_respuesta" >
+   <remarks></remarks>
+   <folder id="FOLTAB1121" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL113" populated="true" UUID="7ac7c578-477b-4ab8-b342-58dfb54bce41" autoIncrement="false" autoIncrementSequenceName="ectd_plantilla_encuesta_respuesta_ID_RESPUESTA_seq" defaultValue="" name="ID_RESPUESTA" nullable="0" physicalName="ID_RESPUESTA" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL114" populated="true" UUID="51218ebc-94e7-480f-9d6a-384bc089e8ed" autoIncrement="false" autoIncrementSequenceName="ectd_plantilla_encuesta_respuesta_ID_PLANTILLA_ENCUESTA_DETALLE_seq" defaultValue="" name="ID_PLANTILLA_ENCUESTA_DETALLE" nullable="0" physicalName="ID_PLANTILLA_ENCUESTA_DETALLE" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL115" populated="true" UUID="effa34a6-4641-4f3b-ad6b-282514eba5cc" autoIncrement="false" autoIncrementSequenceName="ectd_plantilla_encuesta_respuesta_NO_RESPUESTA_seq" defaultValue="" name="NO_RESPUESTA" nullable="0" physicalName="NO_RESPUESTA" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB1123" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB1122" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB1124" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX116" populated="true" UUID="51e0e54c-9bb2-4263-adab-e2958c452e2c" clustered="false" name="ectd_plantilla_encuesta_respuesta_pk" physicalName="ectd_plantilla_encuesta_respuesta_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC117" populated="true" UUID="703d3d93-6aa7-4218-b919-a177c7343673" ascendingOrDescending="UNSPECIFIED" column-ref="COL113" name="ID_RESPUESTA" physicalName="ID_RESPUESTA" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+   <relationship id="REL118" populated="true" UUID="b16ca120-9e02-486c-bd07-dc196c882a2a" deferrability="7" deleteRule="3" fk-table-ref="TAB38" fkCardinality="7" identifying="false" name="ECTM_EMPRESA_ECTM_PARAMETRO_fk" physicalName="ECTM_EMPRESA_ECTM_PARAMETRO_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP119" populated="true" UUID="b0432b1a-bc7d-4660-a26c-2f9dc2905363" fk-column-ref="COL40" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL120" populated="true" UUID="1e7918f2-6968-419a-82bf-6471e0e43a2b" deferrability="7" deleteRule="3" fk-table-ref="TAB9" fkCardinality="7" identifying="false" name="ECTM_EMPRESA_ECTM_LOCAL_fk" physicalName="ECTM_EMPRESA_ECTM_LOCAL_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP121" populated="true" UUID="ab52bdae-1f89-424e-8403-fc66358de996" fk-column-ref="COL11" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL122" populated="true" UUID="436726d2-8f3e-4199-be1e-9496d5c8b29f" deferrability="7" deleteRule="3" fk-table-ref="TAB14" fkCardinality="7" identifying="false" name="ECTM_EMPRESA_ECTC_PLANTILLA_ENCUESTA_fk" physicalName="ECTM_EMPRESA_ECTC_PLANTILLA_ENCUESTA_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP123" populated="true" UUID="8dfb2c46-fe2b-49ef-9c54-d01d579f9948" fk-column-ref="COL16" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL124" populated="true" UUID="2b5d34f5-8db8-4a84-9857-9669dacd0e55" deferrability="7" deleteRule="3" fk-table-ref="TAB93" fkCardinality="7" identifying="false" name="ECTM_EMPRESA_ECTM_PROMOCION_fk" physicalName="ECTM_EMPRESA_ECTM_PROMOCION_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP125" populated="true" UUID="4a1ef4fc-dded-42f7-ad6b-482a555d105e" fk-column-ref="COL95" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL126" populated="true" UUID="6f216a9d-8609-40ee-9cec-2d2114cc8dcd" deferrability="7" deleteRule="3" fk-table-ref="TAB60" fkCardinality="7" identifying="false" name="ECTM_EMPRESA_ECTM_CLIENTE_fk" physicalName="ECTM_EMPRESA_ECTM_CLIENTE_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP127" populated="true" UUID="0a6f6e96-5d96-4749-83cb-529f3736660a" fk-column-ref="COL63" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   </relationship>
+   <relationship id="REL128" populated="true" UUID="9bb4e65a-b151-4853-854d-361c3b612762" deferrability="7" deleteRule="3" fk-table-ref="TAB28" fkCardinality="7" identifying="false" name="ECTM_LOCAL_ECTM_AREA_fk" physicalName="ECTM_LOCAL_ECTM_AREA_fk" pk-table-ref="TAB9" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP129" populated="true" UUID="5cd803e7-7975-417e-b2ec-56976d02a92e" fk-column-ref="COL30" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL10" />
+   </relationship>
+   <relationship id="REL130" populated="true" UUID="f95be176-178f-406a-b00e-d1452faf1f95" deferrability="7" deleteRule="3" fk-table-ref="TAB66" fkCardinality="7" identifying="false" name="ECTM_LOCAL_ECTM_COLABORADOR_fk" physicalName="ECTM_LOCAL_ECTM_COLABORADOR_fk" pk-table-ref="TAB9" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP131" populated="true" UUID="6ebe3385-4b1a-4a7a-bc57-4254ab56f314" fk-column-ref="COL69" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL10" />
+   </relationship>
+   <relationship id="REL132" populated="true" UUID="606d5120-64f3-4463-af42-21a204b58061" deferrability="7" deleteRule="3" fk-table-ref="TAB22" fkCardinality="7" identifying="false" name="ECTC_PLANTILLA_ENCUESTA_ECTD_PLANTILLA_ENCUESTA_fk" physicalName="ECTC_PLANTILLA_ENCUESTA_ECTD_PLANTILLA_ENCUESTA_fk" pk-table-ref="TAB14" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP133" populated="true" UUID="53d12edb-dfac-4a57-a41d-0a891e36737c" fk-column-ref="COL24" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL15" />
+   </relationship>
+   <relationship id="REL134" populated="true" UUID="0e7efb0a-c4c4-4976-83db-4ff7a65f92d9" deferrability="7" deleteRule="3" fk-table-ref="TAB79" fkCardinality="7" identifying="false" name="ECTD_PLANTILLA_ENCUESTA_ECTD_ENCUESTA_RESPUESTA_fk" physicalName="ECTD_PLANTILLA_ENCUESTA_ECTD_ENCUESTA_RESPUESTA_fk" pk-table-ref="TAB22" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP135" populated="true" UUID="70c4ae57-abd0-4498-9244-98a66d763264" fk-column-ref="COL81" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL23" />
+   </relationship>
+   <relationship id="REL136" populated="true" UUID="58d498ed-0759-46cc-a4a1-70c33284d77c" deferrability="7" deleteRule="3" fk-table-ref="TAB112" fkCardinality="7" identifying="false" name="ECTD_PLANTILLA_ENCUESTA_ectd_plantilla_encuesta_respuesta_fk" physicalName="ECTD_PLANTILLA_ENCUESTA_ectd_plantilla_encuesta_respuesta_fk" pk-table-ref="TAB22" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP137" populated="true" UUID="9c16f64c-43f3-41b1-97a4-fce8289574b8" fk-column-ref="COL114" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL23" />
+   </relationship>
+   <relationship id="REL138" populated="true" UUID="4a538131-29f0-4331-a846-d859ba412427" deferrability="7" deleteRule="3" fk-table-ref="TAB72" fkCardinality="7" identifying="false" name="ECTM_AREA_ECTM_ATENCION_fk" physicalName="ECTM_AREA_ECTM_ATENCION_fk" pk-table-ref="TAB28" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP139" populated="true" UUID="945c4e08-0fb5-4a05-99a4-299b26131221" fk-column-ref="COL76" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL29" />
+   </relationship>
+   <relationship id="REL140" populated="true" UUID="c2f91d45-8d67-4c3c-a8c7-fe6e63e069b2" deferrability="7" deleteRule="3" fk-table-ref="TAB79" fkCardinality="7" identifying="false" name="ECTC_ENCUESTA_ECTD_ENCUESTA_RESPUESTA_fk" physicalName="ECTC_ENCUESTA_ECTD_ENCUESTA_RESPUESTA_fk" pk-table-ref="TAB33" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP141" populated="true" UUID="9f8e08fb-f035-47d0-a765-a218ed2230c8" fk-column-ref="COL82" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL34" />
+   </relationship>
+   <relationship id="REL142" populated="true" UUID="94a4e999-3e6d-4fbe-b90f-036513f92433" deferrability="7" deleteRule="3" fk-table-ref="TAB66" fkCardinality="7" identifying="false" name="ECTM_PERSONA_ECTM_COLABORADOR_fk" physicalName="ECTM_PERSONA_ECTM_COLABORADOR_fk" pk-table-ref="TAB45" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP143" populated="true" UUID="0288405f-3804-40a5-82cb-924acbf1cc28" fk-column-ref="COL68" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL46" />
+   </relationship>
+   <relationship id="REL144" populated="true" UUID="ec0d9190-30eb-4722-9d90-e21d15c4106f" deferrability="7" deleteRule="3" fk-table-ref="TAB60" fkCardinality="7" identifying="false" name="ECTM_PERSONA_ECTM_CLIENTE_fk" physicalName="ECTM_PERSONA_ECTM_CLIENTE_fk" pk-table-ref="TAB45" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP145" populated="true" UUID="12393b5e-71e4-421c-b986-f11251b667f4" fk-column-ref="COL62" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL46" />
+   </relationship>
+   <relationship id="REL146" populated="true" UUID="053a6f92-74de-4e1c-ac30-667f4f038a46" deferrability="7" deleteRule="3" fk-table-ref="TAB100" fkCardinality="7" identifying="false" name="ECTM_CLIENTE_ECTC_PROMOCION_ENVIADA_fk" physicalName="ECTM_CLIENTE_ECTC_PROMOCION_ENVIADA_fk" pk-table-ref="TAB60" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP147" populated="true" UUID="4880f194-b063-4e21-a145-5b17a74904b6" fk-column-ref="COL102" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL61" />
+   </relationship>
+   <relationship id="REL148" populated="true" UUID="6ecb4893-a146-4ab4-8688-5c338d02c6aa" deferrability="7" deleteRule="3" fk-table-ref="TAB72" fkCardinality="7" identifying="false" name="ECTM_COLABORADOR_ECTM_ATENCION_fk" physicalName="ECTM_COLABORADOR_ECTM_ATENCION_fk" pk-table-ref="TAB66" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP149" populated="true" UUID="c1577fc7-d18b-4b60-8c2d-fbba654a904a" fk-column-ref="COL75" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL67" />
+   </relationship>
+   <relationship id="REL150" populated="true" UUID="f7d5c0fb-7ec7-465e-8859-63b34bda4690" deferrability="7" deleteRule="3" fk-table-ref="TAB33" fkCardinality="7" identifying="false" name="ECTM_ATENCION_ECTC_ENCUESTA_fk" physicalName="ECTM_ATENCION_ECTC_ENCUESTA_fk" pk-table-ref="TAB72" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP151" populated="true" UUID="7acae14b-a594-4af2-b1da-ffb99440e1b0" fk-column-ref="COL35" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL73" />
+   </relationship>
+   <relationship id="REL152" populated="true" UUID="89cabc0c-732b-4ec6-8700-0714f5cfb4eb" deferrability="7" deleteRule="3" fk-table-ref="TAB93" fkCardinality="7" identifying="false" name="ECTM_TIPO_PROMOCION_ECTM_PROMOCION_fk" physicalName="ECTM_TIPO_PROMOCION_ECTM_PROMOCION_fk" pk-table-ref="TAB85" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP153" populated="true" UUID="43f86912-0071-43c8-b5b8-1ff55ef519fa" fk-column-ref="COL97" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL86" />
+   </relationship>
+   <relationship id="REL154" populated="true" UUID="bd05cf91-b469-40bd-bcf6-e89f071722b0" deferrability="7" deleteRule="3" fk-table-ref="TAB93" fkCardinality="7" identifying="false" name="ECTM_MOTIVO_PROMOCION_ECTM_PROMOCION_fk" physicalName="ECTM_MOTIVO_PROMOCION_ECTM_PROMOCION_fk" pk-table-ref="TAB89" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP155" populated="true" UUID="830cda76-93d4-41f7-91d3-97780427a753" fk-column-ref="COL96" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL90" />
+   </relationship>
+   <relationship id="REL156" populated="true" UUID="d5a41d42-1093-4ac6-a1f8-57990251414f" deferrability="7" deleteRule="3" fk-table-ref="TAB100" fkCardinality="7" identifying="false" name="ECTM_PROMOCION_ECTC_PROMOCION_ENVIADA_fk" physicalName="ECTM_PROMOCION_ECTC_PROMOCION_ENVIADA_fk" pk-table-ref="TAB93" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP157" populated="true" UUID="2b660fc5-3f87-44c2-a388-0d30332d8cd0" fk-column-ref="COL103" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL94" />
+   </relationship>
+   <relationship id="REL158" populated="true" UUID="191c4223-074f-4867-bbed-039470e1af16" deferrability="7" deleteRule="3" fk-table-ref="TAB45" fkCardinality="7" identifying="false" name="ECTM_TIPO_DOCUMENTO_ECTM_PERSONA_fk" physicalName="ECTM_TIPO_DOCUMENTO_ECTM_PERSONA_fk" pk-table-ref="TAB106" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP159" populated="true" UUID="79f8d02e-4af7-4def-ac18-832c7554507c" fk-column-ref="COL48" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL107" />
+   </relationship>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="true" target-schema="public"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB1" x="37" y="21" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB9" x="339" y="118" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB14" x="115" y="173" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB22" x="180" y="309" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB28" x="374" y="222" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB33" x="568" y="315" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB38" x="711" y="40" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB45" x="1019" y="269" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB60" x="804" y="377" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB66" x="837" y="194" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB72" x="601" y="200" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB79" x="528" y="425" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB85" x="89" y="628" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB89" x="226" y="575" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB93" x="20" y="458" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB100" x="460" y="600" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB106" x="938" y="97" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB112" x="235" y="428" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL148" pkConnection="0.14084507042253522" fkConnection="0.8235294117647058" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL150" pkConnection="0.3146067415730337" fkConnection="0.6704545454545454" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL140" pkConnection="0.5612903225806452" fkConnection="0.4482758620689655" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL142" pkConnection="0.39086294416243655" fkConnection="0.7323943661971831" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL144" pkConnection="0.831858407079646" fkConnection="0.14084507042253522" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL158" pkConnection="0.5267175572519084" fkConnection="0.4523809523809524" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL118" pkConnection="0.46511627906976744" fkConnection="0.5172413793103449" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL120" pkConnection="0.7674418604651163" fkConnection="0.23255813953488372" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL128" pkConnection="0.1111111111111111" fkConnection="0.84375" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL138" pkConnection="0.4827586206896552" fkConnection="0.47368421052631576" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL122" pkConnection="0.5081967213114754" fkConnection="0.4863013698630137" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL132" pkConnection="0.4931506849315068" fkConnection="0.5" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL134" pkConnection="0.8424657534246576" fkConnection="0.16556291390728478" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL152" pkConnection="0.35365853658536583" fkConnection="0.6666666666666666" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL154" pkConnection="0.27358490566037735" fkConnection="0.9386792452830188" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL156" pkConnection="0.5517241379310345" fkConnection="0.41379310344827586" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL146" pkConnection="0.46153846153846156" fkConnection="0.5100671140939598" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL124" pkConnection="0.319672131147541" fkConnection="0.39" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL126" pkConnection="0.8787878787878788" fkConnection="0.14084507042253522" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL130" pkConnection="0.6711409395973155" fkConnection="0.31666666666666665" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL136" pkConnection="0.5057471264367817" fkConnection="0.4904214559386973" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>
